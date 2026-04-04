@@ -1,0 +1,82 @@
+:root {
+  --color-navy: #1E2E42;
+  --color-steel: #5B7A99;
+  --color-mist: #A8BECE;
+  --color-offwhite: #F5F2EC;
+
+  --text-primary: var(--color-navy);
+  --text-secondary: var(--color-steel);
+  --text-inverse: var(--color-offwhite);
+
+  --bg-primary: var(--color-offwhite);
+  --bg-card: #ffffff;
+
+  --border-light: var(--color-mist);
+
+  --shadow-soft: 0 4px 12px rgba(30, 46, 66, 0.1);
+
+  --radius: 10px;
+}
+
+/* Page */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-primary);
+}
+
+/* Form Card */
+.form-card {
+  background-color: var(--bg-card);
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title */
+.form-card h2 {
+  color: var(--text-primary);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Labels */
+.form-card label {
+  margin-bottom: 6px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* Inputs */
+.form-card input {
+  padding: 10px;
+  margin-bottom: 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-light);
+  outline: none;
+  font-size: 14px;
+}
+
+.form-card input:focus {
+  border-color: var(--color-steel);
+}
+
+/* Button */
+.form-card button {
+  background-color: var(--color-navy);
+  color: var(--text-inverse);
+  padding: 10px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-card button:hover {
+  background-color: var(--color-steel);
+}
